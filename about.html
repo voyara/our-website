@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo"><span>VOYARA</span>Portal</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="engagement.html">Engagement</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>About Us</h1>
+        <p>We are Voyara — a group of five passionate tourism students united by our love for travel, culture, and discovery. Our name, Voyara — rooted in the word “voyage,” it represents the journeys we take, both as students and future professionals. Together, we aim to learn, lead, and leave a positive mark in the world of tourism.</p>
+
+        <div class="gallery">
+          <!-- Image Frames -->
+          <div class="frame" onclick="showInfo(0)"><img src="ashley.jfif" alt="Ashley" /></div>
+          <div class="frame" onclick="showInfo(1)"><img src="cheska.jfif" alt="Cheska" /></div>
+          <div class="frame" onclick="showInfo(2)"><img src="jelyn.jfif" alt="Jelyn" /></div>
+          <div class="frame" onclick="showInfo(3)"><img src="red.jfif" alt="Red" /></div>
+          <div class="frame" onclick="showInfo(4)"><img src="khrystal.jfif" alt="Khrystal" /></div>
+          <div class="frame" onclick="showInfo(5)"><img src="kim.jfif" alt="Kim" /></div>
+        </div>
+
+         <div class="info-sections">
+          <div class="info" id="info0" style="display:none;">
+            <h2>Ashley</h2>
+            <p>Creative at heart and driven by curiosity, I’m a second-year Tourism Management student who finds joy in storytelling—whether through photography, dance, or guiding others through culture and history. I believe every destination holds a story worth telling, and I’m here to share them with passion, purpose, and a touch of Iloilo pride.</p>
+          </div>
+          <div class="info" id="info1" style="display:none;">
+            <h2>Cheska</h2>
+            <p>As a tourism student with an introverted personality, I bring a calm, observant, and thoughtful approach to the field. While I naturally thrive in quieter environments, I am also sociable and enjoy connecting with others, especially in meaningful one-on-one or small group interactions.
+            </p>
+          </div>
+          <div class="info" id="info2" style="display:none;">
+            <h2>Jelyn</h2>
+            <p>Passionate about the dynamic world of travel, hospitality, and cultural exchange. I’m a happy-go-lucky person and also a shytype when I’m interacting with other people. I chose Tourism Management as my program to contribute to promoting the Philippines’ rich heritage, particularly Iloilo’s renowned festivals.
+            </p>
+          </div>
+          <div class="info" id="info3" style="display:none;">
+            <h2>Red</h2>
+            <p>Sometimes reserved, always a bit different . I enjoy hanging out with friends and also love cozy nights at home. I find inspiration in both laughter and quiet moments.</p>
+          </div>
+          <div class="info" id="info4" style="display:none;">
+            <h2>Khrystal</h2>
+            <p>I'm a passionate second-year tourism student eager to learn and grow within the industry.  I'm particularly interested in  sustainable tourism, ecotourism, event planning and lastly tour coordinator.  My goal is to gain practical experience and contribute to a thriving and responsible tourism sector.</p>
+          </div>
+          <div class="info" id="info5" style="display:none;">
+            <h2>Kim</h2>
+            <p>Introvert by nature, quirky by surprise. I’m all about thoughtful ideas, creative problem-solving, and quiet moments that lead to unexpected inspiration</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showInfo(index) {
+      document.querySelectorAll('.info').forEach(el => el.style.display = 'none');
+      document.getElementById('info' + index).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
